@@ -16,7 +16,7 @@ ip route add default via 172.16.1.1 dev eth1 src 172.16.1.233 table Teth1
 ip rule add from 172.16.1.233 table Teth1
 
 ip route add 192.168.1.0/24 dev eth2 src 192.168.1.20 table Teth2
-ip route add default via 192.168.1.50 dev eth2 src 192.168.1.20 table Teth2
+ip route add default via 192.168.1.1 dev eth2 src 192.168.1.20 table Teth2
 ip rule add from 192.168.1.20 table Teth2
 
 3###########
